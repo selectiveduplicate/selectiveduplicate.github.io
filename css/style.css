@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=PT+Sans+Narrow&family=IM+Fell+DW+Pica&family=Do+Hyeon&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background-color: black;
     color: forestgreen;
@@ -23,6 +27,22 @@ nav {
     display: flex;
     margin-right: 50px;
     gap: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+  }
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    gap: 3px;
+  }
 }
 
 h1 {
@@ -161,9 +181,17 @@ img {
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
   #project-title {
     font-size: 15px;
+  }
+  #projects-listing { /* projects will arrange in columns for mobile devices */
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
   }
 }
 
