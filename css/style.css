@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=PT+Sans+Narrow&family=IM+Fell+DW+Pica&family=Do+Hyeon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=PT+Sans+Narrow&family=IM+Fell+DW+Pica&family=Do+Hyeon&family=PT+Sans&display=swap');
 
 html {
   scroll-behavior: smooth;
@@ -52,21 +52,21 @@ h1 {
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: greenyellow;
 }
-
+/*
 a:visited {
   color: greenyellow;
   text-decoration: none;
 }
-
+*/
 ul {
     list-style: none;
     text-decoration: none;
 }
 
 #main {
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'PT Sans', sans-serif;
   /*font-family: 'IM Fell DW Pica', serif; */
 }
 
@@ -74,6 +74,7 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 50px;
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -83,6 +84,13 @@ ul {
                                        #001a00 5px
   );
   /*background: repeating-linear-gradient(120deg, black, #131a00, #001a00);*/
+}
+
+.about-myself {
+  font-size: 19px;
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 2em;
 }
 
 #projects {
