@@ -29,23 +29,6 @@ nav {
     gap: 50px;
 }
 
-@media only screen and (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: fixed;
-    font-size: 20px;
-  }
-  .navbar-links {
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
-    gap: 3px;
-  }
-}
-
 h1 {
   margin-bottom: 0px;
 }
@@ -132,7 +115,7 @@ img {
 }
 
 #project-title {
-  font-size: 20px;
+  font-size: 15px;
   color: rgb(9, 255, 0);
   margin: 5px;
   padding: 10px;
@@ -195,9 +178,34 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
-  #project-title {
-    font-size: 15px;
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: fixed;
+    font-size: 20px;
   }
+  .navbar-links {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    gap: 3px;
+  }
+  #welcome-section {
+    padding-top: 15em;
+    padding-bottom: 12em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #welcome-section {
+    padding-top: 8em;
+    padding-bottom: 8em;
+  }
+}
+
+@media only screen and (max-width: 1080px) {
   #projects-listing { /* projects will arrange in columns for mobile devices */
     margin-top: 100px;
     display: flex;
