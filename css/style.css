@@ -178,7 +178,7 @@ img {
   font-family: 'PT Sans Narrow', sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 700px) {
   nav {
     display: flex;
     flex-direction: column;
@@ -194,19 +194,25 @@ img {
     gap: 3px;
   }
   #welcome-section {
-    padding-top: 15em;
-    padding-bottom: 12em;
+    padding-top: 50em;
+    padding-bottom: 50em;
+  }
+  #where-i-roam {
+    scale: 80%;
+  }
+  #hello-visitors {
+    scale: 90%;
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media (max-width: 370px) {
   #welcome-section {
-    padding-top: 8em;
-    padding-bottom: 8em;
+    padding-top: 55em;
+    padding-bottom: 55em;
   }
 }
 
-@media only screen and (max-width: 1080px) {
+@media (max-width: 1080px) {
   #projects-listing { /* projects will arrange in columns for mobile devices */
     margin-top: 100px;
     display: flex;
@@ -220,6 +226,26 @@ img {
   }
 }
 
+@media only screen  /* for iPad */
+  and (min-device-width : 414px)
+  and (max-device-width : 736px)
+{
+  #welcome-section {
+    padding-top: 40rem;
+    padding-bottom: 40rem;
+  }
+}
+
+
+@media only screen  /* for iPad */
+  and (min-device-width : 768px)
+  and (max-device-width : 1024px)
+{
+  #welcome-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 /* animation for navbar /*
 /* Buzz Out */
 @-webkit-keyframes hvr-buzz-out {
