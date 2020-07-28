@@ -6,107 +6,131 @@
         <meta name="author" content="Abu Sakib">
         <meta name="keywords" content="HTML, CSS, portfolio, website">
         <meta lang="en">
-        <link rel="stylesheet" type="text/css" href="/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="https://kit.fontawesome.com/8347211041.js" crossorigin="anonymous"></script>
         <title>Abu Sakib</title>
     </head>
     <body>
-        <nav class="navbar" id="top-nav">
-            <ul class="navbar-links">
-                <li class="hvr-buzz-out">
-                    <a href="#welcome-section">About</a> 
-                </li>
-                <li class="hvr-buzz-out">
-                    <a href="#projects">Projects and Hacks</a> 
-                </li>
-                <li class="hvr-buzz-out">
-                    <a href="#contact">Contact</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-md sticky-top nav-mod">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                    <span><i class="fas fa-bars" style="color: yellowgreen;"></i></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active mx-3 hvr-buzz-out">
+                            <a class="nav-link" href="#about-section" style="color: greenyellow;">About</a>
+                        </li>
+                        <li class="nav-item mx-3 hvr-buzz-out">
+                            <a class="nav-link" href="#ph-section" style="color: greenyellow;">Projects and Hacks</a>
+                        </li>
+                        <li class="nav-item mx-3 hvr-buzz-out">
+                            <a class="nav-link" href="#contact-section" style="color: greenyellow;">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-        
-        <div id="main">
-            <section id="welcome-section">
+
+        <div class="container-fluid text-center about-myself" id="about-section">
                 <h1 id="hello-visitors">Hi I'm Sakib.</h1>
-                <p class="about-myself">
-                    I'm an amateur programmer, open-source enthusiast and contributor, published <a href="https://www.goodreads.com/book/show/51864155" target="_blank">writer</a> and bookworm.
+                <p>
+                    I'm an amateur programmer, open-source enthusiast and contributor, published <a href="https://www.goodreads.com/book/show/51864155" target="_blank" rel="noopener noreferrer nofollow">writer</a> and bookworm.
                 </p>
-
-                <p class="about-myself">
-                    I have five years of experience in programming, Linux, software development and workflow. I've been involved in the <a id="open-source-contribution" href="https://mate-desktop.org/" target="_blank">MATE Desktop</a> project for two years as a code and documentation contributor and reviewer. I aspire to become a front-end developer and have one year of experience with JavaScript, HTML and CSS. I'm looking for work where I can apply my strengths and skills to accomplish amazing things, learn new technologies that power the web and software industry and provide a satisfactory service. Feel free to <a href="#contact">contact</a> me. <!-- in a collaborative and thriving environment. --->
+                <p>
+                    I have five years of experience in programming, Linux, software development and workflow. I've been involved in the <a id="open-source-contribution" href="https://mate-desktop.org/" target="_blank" rel="noopener noreferrer nofollow">MATE Desktop</a> project for two years as a code and documentation contributor and reviewer. I aspire to become a front-end developer and have one year of experience with JavaScript, HTML and CSS. I'm looking for work where I can apply my strengths and skills to accomplish amazing things, learn new technologies that power the web and software industry and provide a satisfactory service. Feel free to <a href="#contact-section">contact</a> me.
                 </p>
-    
-                <div id="where-i-roam">
-                    <a id="github-profile-link" class="hvr-float" href="https://github.com/selectiveduplicate" target="_blank">
-                        <img id="github-logo" alt="GitHub logo and profile link" title="Open GitHub profile" src="/media/github.svg">
-                    </a>
-                    <a id="linkedin-profile-link" class="hvr-float" href="https://www.linkedin.com/in/selectiveduplicate/" target="_blank">
-                        <img id="linkedin-logo" alt="Linkedin logo and profile link" title="Open LinkedIn profile" src="/media/linkedin.svg">
-                    </a>
-                    <a id="goodreads-profile-link" class="hvr-float" href=" https://www.goodreads.com/10080" target="_blank">
-                        <img id="goodreads-logo" alt="Goodreads logo and profile link" title="Open Goodreads profile" src="/media/icons8-goodreads.svg">
-                    </a>
-                    <a id="blog-profile-link" class="hvr-float" href="https://medium.com/blog-of-an-introvert" target="_blank">
-                        <img id="blog-logo" alt="Medium blog logo and profile link" title="Open Medium profile" src="/media/icons8-medium.svg">
-                    </a>
-                </div>
-    
-            </section>
-    
-            <section id="projects">
-                <h2 id="projects-section-title">Here are some of my projects <img id="arrow-down-indicator" src="/media/corner-right-down.svg"></h2>
-    
-                <div id="projects-listing">
-                    <div class="card" class="project-tile">
-                        <a class="hvr-shutter-out-horizontal" href="https://selectiveduplicate.github.io/prodpage/" target="_blank">
-                            <img id="project-image" alt="A screenshot of the GitHub page for the prodpage project" src="https://raw.githubusercontent.com/selectiveduplicate/prodpage/master/prodpage_capture.png">
-                            <p id="project-title">prodpage</p>
-                        </a>
-                    </div>
-    
-                    <div class="card" class="project-tile">
-                        <a class="hvr-shutter-out-horizontal" href="https://selectiveduplicate.github.io/fiload/" target="_blank">
-                            <img id="project-image" alt="A screenshot of the GitHub page for the fiload project" src="https://raw.githubusercontent.com/selectiveduplicate/fiload/master/fiload_capture.png">
-                            <p id="project-title">fiload</p>
-                        </a>
-                    </div>
-
-                    <div class="card" class="project-tile">
-                        <a class="hvr-shutter-out-horizontal" href="https://redolist.netlify.app/" target="_blank">
-                            <img id="project-image" alt="A screenshot of the Netlify page for the todo-list project" src="https://raw.githubusercontent.com/selectiveduplicate/todo-list/master/todolist.png">
-                            <p id="project-title">Todo List</p>
-                        </a>
-                    </div>
-    
-                    <div class="card" class="project-tile">
-                        <a class="hvr-shutter-out-horizontal" href="https://selectiveduplicate.github.io/8086-assembly/" target="_blank">
-                            <img id="project-image" alt="A screenshot of the GitHub page for the 8086-assembly project" src="https://raw.githubusercontent.com/selectiveduplicate/8086-assembly/master/assembly_capture.png">
-                            <p id="project-title">8086-assembly</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
-    
-            <section id="contact">
-                <h1 id="contact-header">Want to get in touch? Shoot me an email:</h2>
-                <address id="email-address">
-                    <a id="email-address" class="hvr-float" href="mailto:mabusakib@gmail.com">
-                        <img id="mail-logo" alt="Mail icon" src="/media/mail.svg">
-                    </a>
-                </address>
-            </section>
-    
-            <section id="footer-area">
-                <footer>
-                    <p>
-                        &copy; 2020 Abu Sakib
-                    </p>
-                    <p>
-                        Icons by <a href="https://feathericons.com/" target="_blank">Feather</a> and <a href="https://icons8.com/" target="_blank">Icons8</a>
-                    </p>
-                </footer>
-            </section>
+            </div>
         </div>
-    
+
+        <div class="container-fluid text-center where-i-roam">
+            <a class="hvr-float" href="https://github.com/selectiveduplicate" target="_blank" rel="noopener noreferrer nofollow">
+                <img class="img-fluid mx-4" id="github-logo" alt="GitHub logo and profile link" src="media/github.svg">
+            </a>
+            <a class="hvr-float" href="https://www.linkedin.com/in/selectiveduplicate/" target="_blank" rel="noopener noreferrer nofollow">
+                <img class="img-fluid mx-4" id="linkedin-logo" alt="Linkedin logo and profile link" src="media/linkedin.svg">
+            </a>
+            <a class="hvr-float" href="https://medium.com/blog-of-an-introvert" target="_blank" rel="noopener noreferrer nofollow">
+                <img class="img-fluid mx-4" id="medium-logo" alt="Medium blog logo and profile link" src="media/icons8-medium.svg">
+            </a>
+            <a class="hvr-float" href="https://www.goodreads.com/10080" target="_blank" rel="noopener noreferrer nofollow">
+                <img class="img-fluid mx-4" id="goodreads-logo" alt="Goodreads logo and profile link" src="media/icons8-goodreads.svg">
+            </a>
+            
+        <div class="container-fluid text-center" id="ph-section">
+
+            <h3 class="projects-section-title">
+                Here are some of my projects
+            </h3>
+            <hr class="my-4 separator-line">
+
+            <div class="row projects-listing-row-mod">
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card mx-auto" style="max-width: 18rem; margin-bottom: 10rem; border-color: yellowgreen;">
+                        <img class="card-img-top" src="https://raw.githubusercontent.com/selectiveduplicate/fiload/gh-pages/rsz_1fiload_capture.png" alt="Project image">
+                        <div class="card-body" style="background-color: black;">
+                            <h5 class="card-title" style="color: yellowgreen;">fiload</h5>
+                            <a href="https://selectiveduplicate.github.io/fiload/" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-info" style="background-color: darkgreen; border-color: yellowgreen;">Visit project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card mx-auto" style="max-width: 18rem; margin-bottom: 10rem; border-color: yellowgreen;">
+                        <img class="card-img-top" src="https://raw.githubusercontent.com/selectiveduplicate/todo-list/master/todolist.png" alt="Project image">
+                        <div class="card-body" style="background-color: black;">
+                            <h5 class="card-title" style="color: yellowgreen;">Todo List</h5>
+                            <a href="https://redolist.netlify.app/" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-info" style="background-color: darkgreen; border-color: yellowgreen;">Visit project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card mx-auto" style="max-width: 18rem; margin-bottom: 10rem; border-color: yellowgreen;">
+                        <img class="card-img-top" src="https://raw.githubusercontent.com/selectiveduplicate/8086-assembly/master/assemb_capture.png" alt="Project image">
+                        <div class="card-body" style="background-color: black;">
+                            <h5 class="card-title" style="color: yellowgreen;">8086-assembly</h5>
+                            <a href="https://selectiveduplicate.github.io/8086-assembly/" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-info" style="background-color: darkgreen; border-color: yellowgreen;">Visit project</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                    <div class="card mx-auto" style="max-width: 18rem; margin-bottom: 10rem; border-color: yellowgreen;">
+                        <img class="card-img-top" src="https://raw.githubusercontent.com/selectiveduplicate/prodpage/master/prodpage_fig.png" alt="Project image">
+                        <div class="card-body" style="background-color: black;">
+                            <h5 class="card-title" style="color: yellowgreen;">prodpage</h5>
+                            <a href="https://selectiveduplicate.github.io/prodpage/" target="_blank" rel="noopener noreferrer nofollow" class="btn btn-info" style="background-color: darkgreen; border-color: yellowgreen;">Visit project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid text-center" id="contact-section">
+            <h3>Want to get in touch? Shoot me an email:</h3>
+            <a class="hvr-float" href="mailto:mabusakib@gmail.com">
+                <img class="img-fluid hvr-float" src="media/mail.svg" alt="Mail logo and link">
+            </a>
+        </div>
+        
+        <div class="container-fluid footer-section">
+            <footer class="float-right">
+                <p>
+                    &copy; 2020 Abu Sakib
+                </p>
+                <p>
+                    Icons by <a href="https://feathericons.com/" target="_blank">Feather</a> and <a href="https://icons8.com/" target="_blank">Icons8</a>
+                </p>
+            </footer>
+        </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 
 </html>

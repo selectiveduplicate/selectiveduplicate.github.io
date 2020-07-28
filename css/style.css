@@ -7,255 +7,86 @@ html {
 body {
     background-color: black;
     color: forestgreen;
+    font-family: 'PT Sans', sans-serif;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    color: greenyellow;
+    color: yellowgreen;
     font-family: 'Do Hyeon', sans-serif;
-    font-size: 25px;
-    background-color: rgb(19, 36, 15);
-    z-index: 1;
-}
-
-.navbar-links {
-    display: flex;
-    margin-right: 50px;
-    gap: 50px;
-}
-
-h1 {
-  margin-bottom: 0px;
-}
-
-a {
-  text-decoration: none;
-  color: greenyellow;
-}
-/*
-a:visited {
-  color: greenyellow;
-  text-decoration: none;
-}
-*/
-ul {
-    list-style: none;
-    text-decoration: none;
-}
-
-#main {
-  font-family: 'PT Sans', sans-serif;
-  /*font-family: 'IM Fell DW Pica', serif; */
-}
-
-#welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 50px;
-  margin-right: 1.5vw;
-  /*width: 100%; */
-  height: 100vh;
-  text-align: center;
-  padding-top: 1rem;
-  /*background: repeating-linear-gradient(
-                                         to right,
-                                       black,
-                                       #001a00 5px
-  );
-  /*background: repeating-linear-gradient(120deg, black, #131a00, #001a00);*/
+    font-size: 1.5em;
+    background-color: rgb(12, 19, 9);
 }
 
 .about-myself {
-  font-size: 19px;
-  margin-left: 100px;
-  margin-right: 100px;
-  line-height: 2em;
+  font-size: 1.2em;
+  padding-top: 5em;
 }
 
-#projects {
-  background-color: #010201;
-  text-align: center;
-  padding: 100px;
+.about-myself a {
+  color: yellowgreen;
+  text-decoration: none;
 }
 
-#projects-listing {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
+.about-myself a:hover {
+  color: yellowgreen;
+  text-decoration: none;
 }
 
-#projects-section-title {
-  border-bottom: solid 2px;
+.where-i-roam {
+  margin-top: 5rem;
 }
 
-img {
-  border-color: yellowgreen;
-  max-width: 100%;
-  height: auto;
-}
-
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 2px;
-  border: solid 2px;
-  scale: 60%;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 5px 16px 0 yellowgreen;
-}
-
-#project-title {
-  font-size: 2em;
-  color: rgb(9, 255, 0);
-  margin: 5px;
-  padding: 10px;
-}
-
-#where-i-roam {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 100px;
-}
-
-#arrow-down-indicator {
-  position: relative;
-  height: 15px;
-  top: 3px;
+#goodreads-logo {
+  height: 30px;
 }
 
 #github-logo {
   height: 30px;
-  padding-right: 50px;
 }
 
 #linkedin-logo {
   height: 30px;
-  padding-right: 50px;
-}
-#goodreads-logo {
-  height: 30px;
-  padding-right: 50px;
 }
 
-#twitter-logo {
-  scale: 1.0;
-  height: 30px;
-  padding-right: 50px;
-}
-
-#blog-logo {
+#medium-logo {
   height: 30px;
 }
 
-#mail-logo {
-  padding-top: 30px;
-  height: 27px;
+.projects-section-title {
+  margin-top: 15rem;
 }
 
-#contact {
-  background-color: #010201;
-  text-align: center;
-  padding: 100px;
-  margin-top: 100px;
+.projects-listing-row-mod {
+  margin-top: 5rem;
 }
 
-#footer-area {
-  text-align: right;
-  font-size: 18px;
+.separator-line {
+  background-color: forestgreen;
+}
+
+
+#contact-section {
+  margin-top: 15rem;
+}
+
+#contact-section img {
+  height: 30px;
+}
+
+#contact-section a {
+  padding-top: 1.5rem;
+}
+
+.footer-section {
   font-family: 'PT Sans Narrow', sans-serif;
+  text-align: right;
+  padding-top: 5rem;
+  margin: 1rem;
 }
 
-@media (max-width: 768px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    position: fixed;
-    font-size: 20px;
-  }
-  .navbar-links {
-    display: flex;
-    flex-direction: column;
-    margin-right: 50px;
-    gap: 3px;
-  }
-  #welcome-section {
-    padding-top: 15em;
-    padding-bottom: 15em;
-  }
-  #where-i-roam {
-    scale: 80%;
-  }
-  #hello-visitors {
-    scale: 90%;
-  }
-  #projects-listing { /* projects will arrange in columns for mobile devices */
-    margin-top: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-  }
-
-  .card {
-    /* Add shadows to create the "card" effect */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 2px;
-    border: solid 2px;
-    scale: 100%;
-  }  
-
-  #project-title {
-    font-size: 1em;
-    margin: 5px;
-    padding: 0px;
-  }
-}
-
-@media (max-width: 375px) {
-  #welcome-section {
-    padding-top: 95rem;
-    padding-bottom: 95rem;
-  }
-}
-
-@media (max-width: 370px) {
-  #welcome-section {
-    padding-top: 55rem;
-    padding-bottom: 55rem;
-  }
-}
-
-@media (max-width: 380px) {
-  #welcome-section {
-    padding-top: 55rem;
-    padding-bottom: 55rem;
-  }
-}
-
-@media (max-width: 414px)
-    and (min-width: 376px) {
-  #welcome-section {
-    padding-top: 40rem;
-    padding-bottom: 40rem;
-  }
+.footer-section a {
+  text-decoration: none;
+  color: greenyellow;
 }
 /* animation for navbar /*
 /* Buzz Out */
