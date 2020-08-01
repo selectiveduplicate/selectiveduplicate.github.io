@@ -29,6 +29,9 @@
                         <li class="nav-item active mx-3 hvr-buzz-out">
                             <a class="nav-link" href="#about-section" style="color: greenyellow;">About</a>
                         </li>
+                        <li class="nav-item active mx-3 hvr-buzz-out">
+                            <a class="nav-link" href="#skills-section" style="color: greenyellow;">Skills</a>
+                        </li>
                         <li class="nav-item mx-3 hvr-buzz-out">
                             <a class="nav-link" href="#ph-section" style="color: greenyellow;">Projects and Hacks</a>
                         </li>
@@ -64,11 +67,83 @@
             <a class="hvr-float" href="https://www.goodreads.com/10080" target="_blank" rel="noopener noreferrer nofollow">
                 <img class="img-fluid mx-4" id="goodreads-logo" alt="Goodreads logo and profile link" src="media/icons8-goodreads.svg">
             </a>
+
+        <div class="container-fluid text-center" id="skills-section">
+            <h3>Some of my skills</h3>
+            <hr class="my-4 separator-line">
+
+            <div class="row skills-listing">
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <figure class="figure my-5">
+                        <img class="figure-img  img-fluid" alt="JavaScript icon" src="media/icons8-javascript-100.png">
+                        <figcaption class="figure-caption text-center" style="color: forestgreen;">JavaScript</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <figure class="figure my-5">
+                        <img class="figure-img img-fluid" alt="HTML icon" src="media/icons8-html-5-100.png">
+                        <figcaption class="figure-caption text-center" style="color: forestgreen;">HTML5</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <figure class="figure my-5">
+                        <img class="figure-img img-fluid" alt="CSS3 icon" src="media/icons8-css3-100.png">
+                        <figcaption class="figure-caption text-center" style="color: forestgreen;">CSS3</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <figure class="figure  my-5">
+                        <img class="figure-img img-fluid" alt="Bootstrap icon" src="media/icons8-bootstrap-100.png">
+                        <figcaption class="figure-caption text-center" style="color: forestgreen;">Bootstrap</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <figure class="figure  my-5">
+                        <img class="figure-img img-fluid" alt="React.js icon" src="media/icons8-react-100.png">
+                        <figcaption class="figure-caption text-center" style="color: forestgreen;">React</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <figure class="figure my-5">
+                        <img class="figure-img img-fluid" alt="Python icon" src="media/icons8-python-100.png">
+                        <figcaption class="figure-caption text-center" style="color: forestgreen;">Python</figcaption>
+                    </figure>
+                </div>
+                
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <figure class="figure my-5">
+                        <img class="figure-img img-fluid" alt="C icon" src="media/icons8-c-100.png">
+                        <figcaption class="figure-caption text-center" style="color: forestgreen;">C</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <figure class="figure  my-5">
+                        <img class="figure-img img-fluid" alt="Git icon" src="media/icons8-git-100.png">
+                        <figcaption class="figure-caption text-center" style="color: forestgreen;">Git</figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 col-md-4">
+                    <figure class="figure my-5">
+                        <img class="figure-img img-fluid" alt="Linux icon" src="media/icons8-linux-100.png">
+                        <figcaption class="figure-caption text-center" style="color: forestgreen;">Linux</figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+            
             
         <div class="container-fluid text-center" id="ph-section">
 
             <h3 class="projects-section-title">
-                Here are some of my projects
+                Some of my projects
             </h3>
             <hr class="my-4 separator-line">
 
@@ -129,8 +204,13 @@
         
         <div class="container-fluid footer-section">
             <footer class="float-right">
-                <p>
-                    &copy; 2020 Abu Sakib
+                <p id="copyright">
+                    &copy; 
+                    <script> /* for automated year generation */
+                        document.getElementById("copyright").appendChild(
+                            document.createTextNode(new Date().getFullYear())
+                        );
+                    </script> Abu Sakib
                 </p>
                 <p>
                     Icons by <a href="https://feathericons.com/" target="_blank">Feather</a> and <a href="https://icons8.com/" target="_blank">Icons8</a>

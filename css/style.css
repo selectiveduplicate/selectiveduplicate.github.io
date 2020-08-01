@@ -52,8 +52,8 @@ nav {
   height: 30px;
 }
 
-.projects-section-title {
-  margin-top: 15rem;
+#ph-section {
+  padding-top: 12rem;
 }
 
 .projects-listing-row-mod {
@@ -87,6 +87,14 @@ nav {
 .footer-section a {
   text-decoration: none;
   color: greenyellow;
+}
+
+#skills-section {
+  padding-top: 12rem;
+}
+
+.skills-listing {
+  padding-top: 5rem;
 }
 
 .btn:hover {
