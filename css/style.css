@@ -88,6 +88,10 @@ nav {
   text-decoration: none;
   color: greenyellow;
 }
+
+.btn:hover {
+  background-color: black;
+}
 /* animation for navbar /*
 /* Buzz Out */
 @-webkit-keyframes hvr-buzz-out {
