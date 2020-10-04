@@ -52,6 +52,11 @@ nav {
   height: 30px;
 }
 
+.fa-dev {
+  color: #9acd32;
+  font-size: 30px;
+}
+
 #ph-section {
   padding-top: 12rem;
 }
